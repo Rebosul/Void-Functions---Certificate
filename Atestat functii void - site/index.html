@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Șiruri de caractere | Prima pagina</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0k;
+            background-color: #fcd9a4;
+            /* Ivory */
+            color: #ffffff;
+            /* Dark gray for text */
+        }
+
+        header {
+            background-color: #063d0a;
+            /* Dusty rose */
+            color: #fff;
+            /* White */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #063d0a;
+            /* Dusty rose */
+            color: #fff;
+            /* White */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            color: #6e6e72;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        h4 {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+            h5 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+        h4:hover {
+            color: #e61a4a;
+            
+        }
+
+        footer .back-to-top-btn {
+            display: inline-block;
+            width: 30px;
+            /* Adjusted size */
+            height: 30px;
+            /* Adjusted size */
+            border-radius: 50%;
+            background-color: #fff;
+            color: #54cc58;
+            /* Dark blue */
+            font-size: 16px;
+            /* Adjusted size */
+            line-height: 30px;
+            /* Adjusted size */
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        footer .back-to-top-btn:hover {
+            background-color: #54cc58;
+            /* Light pink */
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            /* Added some bottom margin for better visual separation */
+            background-color: #ffffff;
+            /* Tan */
+            color: #2f0fe3;
+            /* Dark gray for text */
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 170px;
+            margin-right: 170px;
+        }
+
+        h2 {
+            color: #1f09ad;
+            /* Dark coral */
+        }
+
+        p {
+            color: #6e6e72;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Subprograme. Funcții void</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h4>INTRODUCERE</h4></a></li>
+                <li><a href="generalități.html"><h4>Generalități</h4></a></li>
+                <li><a href="funcții1.html"><h4>Moduri de inițializare</h4></a></li>
+                <li><a href="funcții2.html"><h4>Exemple de funcții void</h4></a></li>
+                <li><a href="contact.html"><h4>Contact</h4></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introducere în limbajele de programare</h2>
+            <p>Limbajele de programare sunt limbaje asemănătoare cu limbajul uman. Conțin cuvinte 
+                (destul de puține), semne de punctuație, operații matematice și au reguli de scriere. Programele 
+                care rulează pe orice calculator au fost scrise într-un limbaj de programare. Există numeroase 
+                limbaje de programare, precum :
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Pascal</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>PHP</li>
+                    <li>Javascript etc.</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Limbajul C++</h2>
+            <p><b>Limbajul C++</b> a fost inventat de către <b>Bjarne Stroustrup</b> în 1979, ca o extindere a limbajului C. 
+                Limbajul C a fost inventat în 1969-1973 de către Dennis Ritchie pentru a realiza sistemul de operare 
+                Unix. Astfel, aproape toate programele scrise în C pot fi compilate în C++, eventual cu foarte puține 
+                modificări.
+                  <Br><Br>
+                   Pentru a scrie un program C++ avem nevoie cel puțin de un editor de text pentru scrierea sursei și de un 
+                   compilator C++. Deși fișierul sursă poate fi realizat cu orice editor de text, de cele mai multe ori 
+                   folosim un <b>IDE</b>. <b>Un IDE pentru C/C++ foarte utilizat este Code::Blocks.</b>
+
+                
+
+            </p>
+        </section>
+        <section id="section3">
+            <h2>Compilare și interpretare</h2>
+            <p>Programul scris într-un limbaj de programare se numește <b>program sursă</b> și trebuie traduse într-un limbaj
+                pe care îl înțelege procesorul, numit <b>cod mașină</b>, sau <b>program executabil</b>. Pentru anumite limbaje de programare operația
+                de traducere se numește <b>compilare</b> (cazul lui C, C++, Pascal, etc.), pentru alte limbaje (PHP, Python, Javascript, etc.) 
+                operația de traducere se numește <b>interpretare</b>. Traducerea este realizată de un program specializat numit <b>compilator</b> sau 
+                <b>interpretor</b>.
+            </p>
+        </section>
+        </main>
+
+    <footer style="text-align: center;">
+        <a href="#header" class="back-to-top-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#9650;</a>
+    </footer>
+</body>
+
+</html>

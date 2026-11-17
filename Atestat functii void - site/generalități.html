@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Șiruri de caractere | Prima pagina</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            background-color: #fcd9a4;
+            /* Ivory */
+            color: #ffffff;
+            /* Dark gray for text */
+        }
+
+        header {
+            background-color: #063d0a;
+            /* Dusty rose */
+            color: #fff;
+            /* White */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #063d0a;
+            /* Dusty rose */
+            color: #fff;
+            /* White */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer .back-to-top-btn {
+            display: inline-block;
+            width: 30px;
+            /* Adjusted size */
+            height: 30px;
+            /* Adjusted size */
+            border-radius: 50%;
+            background-color: #fff;
+            color: #54cc58;
+            /* Dark blue */
+            font-size: 16px;
+            /* Adjusted size */
+            line-height: 30px;
+            /* Adjusted size */
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        footer .back-to-top-btn:hover {
+            background-color: #54cc58;
+            /* Light pink */
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            background-color: #ffffff;
+            /* Tan */
+            color: #2f0fe3;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 170px;
+            margin-right: 170px;
+        }
+
+        h2 {
+            color: #1f09ad;
+        }
+
+        p {
+            color: #6e6e72;
+        }
+        h3 {
+            color: #1e2793;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-left: 170px;
+            margin-right: 170px;
+        }
+        h4 {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+        h5 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+        h4:hover {
+            color: #e61a4a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Subprograme. Funcții void</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h4>Introducere</h4></a></li>
+                <li><a href="generalități.html"><h4>GENERALITĂȚI</h4></a></li>
+                <li><a href="funcții1.html"><h4>Moduri de inițializare</h4></a></li>
+                <li><a href="funcții2.html"><h4>Exemple de funcții void</h4></a></li>
+                <li><a href="contact.html"><h4>Contact</h4></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Un subprogram (funcție) este o colecție de tipuri de date, variabile,
+		instrucțiuni care îndeplinesc o anumită sarcină (calcule, citiri, afișări),
+		atunci când este apelat (folosit) de un program sau de un alt subprogram. </h3>
+        </section>
+        <section>
+            <h2>Subprogramele pot fi de două tipuri:</h2>
+            <p>Un șir de caractere se declară în limbajul C++ astfel:
+            </p>
+            <p> <b>funcții</b> - subprograme care determină un anumit rezultat, o anumită valoare,
+			pornind de la anumite date de intrare. Spunem că valoarea este returnată de către funcție,
+			iar aceasta va fi apelată ca operand într-o expresie,
+			valoarea operandului în expresie fiind de fapt valoarea rezultatului funcției. 
+            </p>
+			<p> <b>proceduri</b> – subprograme care se folosesc într-o instrucțiune de sine stătătoare,
+			nu într-o expresie. Ele îndeplinesc o sarcină, au un efect și nu returnează un rezultat.
+			De exemplu, citirea unor variabile, afișarea unor valori, transformarea unor date, etc.
+			</p>
+        </section>
+        <section>
+            <h2>Beneficiile subprogramelor</h2>
+            <p> 1.<b>Reutilizarea codului</b>
+			</p>
+            <p> 2.<b>Modularitatea și structurarea</b>
+			<p> 3.<b>Abstracția și incapsularea</b>
+			<p> 4.<b>Eficiența și performanța</b>
+			<p> 5.<b>Testabilitate și depanare mai ușoară</b>
+			<p> 6.<b>Flexibilitate și extensibilitate</b>
+            </p>
+        </section>
+        <section>
+            <h2>Funcții void</h2>
+            <p>
+            Sunt situații când dorim să folosim aceeași bucată de cod în mai multe locuri într-un program .
+			Funcțiile void sunt <b> funcții procedurale </b> - care nu returnează valori și se
+			apelează ca instrucțiuni separate.
+			</p>
+			<p> <h2>Exemplu de funcție void:</h2>
+                <Br><Br>
+                <img src="images/new/Exemplu1.jpg">
+            </p>
+        </section>
+        <section>
+            <h2>Diferențele față de funcțiile operand</h2>
+            <p> La definire, în loc de tipul rezultatului se scrie void. 
+				Este un cuvânt cheie care aici indică faptul că funcția este procedurală, nu returnează valoare.
+			</p>
+			<p> Apelul unei astfel de funcții se face ca instrucțiune separată, cum se poate vedea mai sus,
+			și nu în cadrul unei expresii.
+			</p>
+			<p> Instrucțiunea return poate fi prezentă în funcțiile procedurale, dar fără a fi urmată de o expresie,
+			ci doar de caracterul punct și virgulă. Dacă se ajunge la executarea ei funcția se încheie imediat.
+			</p>
+			<p> În figura 1 este aceeasi funcție void de mai sus, iar în figura 2 putem observa o funcție operand
+			echivalentă cu prima.
+			</p>
+			<p>
+                <Br><Br><Br><Br>
+                <img src="images/new/Exemplu1.jpg"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <img src="images/new/Exemplu2.jpg">
+                <br><br>
+                &emsp;&emsp;&emsp;&nbsp;Fig. 1
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;Fig. 2
+            </p>
+        </section>
+        <section>
+            <h2>Exemplu de reapelare a unei funcții</h2>
+            <p>
+                Putem observa ca funcția din imaginea de mai jos a fost apelată de mai multe ori.
+				Acesta afișează valorile lui <b> a </b> și <b> b </b> în diferite momente ale execuției programului.
+                <Br><Br><br><br>
+                    <img src="images/new/Exemplu3.jpg">
+                    <br><br><br><br>
+            </p>
+        </section>
+    </main>
+
+    <footer style="text-align: center;">
+        <a href="#header" class="back-to-top-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#9650;</a>
+    </footer>
+</body>
+
+</html>

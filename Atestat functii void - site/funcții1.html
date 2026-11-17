@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Șiruri de caractere | Prima pagina</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            background-color: #fcd9a4;
+            /* Ivory */
+            color: #333;
+            /* Dark gray for text */
+        }
+
+        header {
+            background-color: #063d0a;
+            /* Dusty rose */
+            color: #fff;
+            /* White */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #063d0a;
+            /* Dusty rose */
+            color: #fff;
+            /* White */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer .back-to-top-btn {
+            display: inline-block;
+            width: 30px;
+            /* Adjusted size */
+            height: 30px;
+            /* Adjusted size */
+            border-radius: 50%;
+            background-color: #fff;
+            color: #54cc58;
+            /* Dark blue */
+            font-size: 16px;
+            /* Adjusted size */
+            line-height: 30px;
+            /* Adjusted size */
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        footer .back-to-top-btn:hover {
+            background-color: #54cc58;
+            /* Light pink */
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        section {
+            background-color: #ffffff;
+            /* Tan */
+            color: #2f0fe3;
+            /* Dark gray for text */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 6px 20px 0 rgba(0,0,0,0.14);
+        }
+
+        section:hover {
+            background-color: #54cc58; 
+            color: #fff; 
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #1f09ad;
+            text-align: center;
+        }
+        h4 {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+        h4:hover {
+            color: #e61a4a;
+        }
+        h5 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        p {
+            color: #6e6e72;
+        }
+
+        h3 {
+            color: #1e2793;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Subprograme. Funcții void</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h4>Introducere</h4></a></li>
+                <li><a href="generalități.html"><h4>Generalități</h4></a></li>
+                <li><a href="funcții1.html"><h4>MODURI DE INIȚIALIZARE</h4></a></li>
+                <li><a href="funcții2.html"><h4>Exemple de funcții void</h4></a></li>
+                <li><a href="contact.html"><h4>Contact</h4></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Mai jos sunt afișate diferite moduri de a apela funcțiile void și care este diferența dintre ele.</h3>
+        <table>
+            <tr>
+                <td>
+                    <section>
+                        <h2>void funcție(int a)</h2>
+                        <p>Funcția este apelată folosind o singură variabilă de tip număr.
+                        </p>
+                    </section>
+                </td>
+                <td>
+                    <section>
+                        <h2>void funcție(char a)</h2>
+                        <p>Funcția este apelată folosind o singură variabilă de tip caracter.
+                        </p>
+                    </section>
+                </td>
+                <td>
+                    <section>
+                        <h2>void funcție()</h2>
+                        <p>Funcția este apelată fară a folosi nicio variabilă. Asta înseamna că funcția va face
+						întotdeauna exact aceleași operații.
+                        </p>
+                    </section>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <section>
+                        <h2>void funcție(int v[100])</h2>
+                        <p>Funcția este apelată folosind un vector de variabile număr de dimensiune 100.
+                            <Br><Br>
+                        </p>
+                    </section>
+                </td>
+                <td>
+                    <section>
+                        <h2>void funcție(int a,char b,int v[100])</h2>
+                        <p>Funcția este apelată folosind o variabilă de tip număr, o variabilă de tip
+						caracter și un vector de variabile număr de dimensiune 100.
+                            <Br><Br>
+                        </p>
+                    </section>
+                </td>
+                <td>
+                    <section>
+                        <h2>void funcție(int a,int &b);</h2>
+                        <p>Funcția este apelată folosind o variabilă de tip număr globală sau locală (număr care
+						își va păstra valoarea în exteriorul funcției void) și o variabilă prin referință, care
+						va păstra în exteriorul funcției orice modificare făcută prin funcție.
+                        </p>
+                    </section>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <a href="#header" class="back-to-top-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#9650;</a>
+    </footer>
+</body>
+
+</html>
